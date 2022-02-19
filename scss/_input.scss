@@ -1,0 +1,31 @@
+//<INPUT>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.input {
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding: 16px 28px;
+	font-size: 16px;
+	color: #808080;
+	border: 1px solid #CCCCCC;
+	transition: border 0.3s ease 0s;
+	&._focus {
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	}
+	&._error {
+		background-color: rgba(253, 175, 175, 0.2);
+		box-shadow: 0 0 5px red;
+	}
+}
+textarea.input{
+	min-height: 125px;
+	resize: vertical;
+}
+//</INPUT>====================================================================================================

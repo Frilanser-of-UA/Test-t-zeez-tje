@@ -1,0 +1,123 @@
+.links {
+	display: flex;
+	// .links__link
+	
+	&__link {
+		font-weight: 600;
+		font-size: 16px;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		border: 1px solid #FFFFFF;
+		color: #FFFFFF;
+		height: 48px;
+		flex: 0 0 48px;
+		border-radius: 50%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		transition: color 0.3s ease 0s, border-color 0.3s ease 0s, transform 0.3s ease 0s;
+		@media (any-hover:hover){
+			&:hover{
+				color: #D3B47F;
+				border-color: #D3B47F;
+				transform: scale(1.1);
+			}
+		}
+		&:not(:last-child){
+			margin: 0px 25px 0px 0px;
+		}
+	}
+	&_color{
+		.links__link{
+			color: #000000;
+			border-color: #000000;
+		}
+	}
+}
+
+
+._ibg {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+//====================================================================================================
+._swiper {
+	overflow: hidden;
+	//.swiper-wrapper
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+		box-sizing: content-box;
+		display: flex;
+		position: relative;
+	}
+	&.swiper-container-vertical {
+		.swiper-wrapper {
+			flex-direction: column;
+		}
+	}
+	&.swiper-container-autoheight {
+		.swiper-wrapper {
+			align-items: flex-start;
+		}
+	}
+}
+.swiper-container-initialized {
+	.swiper-slide {
+		flex-shrink: 0;
+		// transition-property: transform;
+	}
+}
+.swiper-container-android {
+	.swiper-slide,
+	.swiper-wrapper {
+		transform: translate3d(0px, 0, 0);
+	}
+}
+.swiper-button-lock {
+	display: none !important;
+}
+
+.slider-arrow {
+	font-size: 48px;
+	width: 70px;
+	height: 70px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	@media (any-hover:hover){
+		&:hover{
+			color: #D3B47F;
+		}
+	}
+	// .slider-arrow_prev
+	&_statick{
+		position: static;
+		transform: translateY(0)
+	}
+	&_prev {
+		transform: translateY(-50%) rotate(-180deg);
+		right: 20px;
+	}
+	&_transform{
+		transform: translateY(0) rotate(-180deg);
+	}
+	// .slider-arrow_next
+
+	&_next {
+		left: 20px;
+	}
+	
+}

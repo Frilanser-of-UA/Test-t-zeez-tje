@@ -1,0 +1,48 @@
+//<QUANTITY>====================================================================================================
+.quantity {
+	width: 145px;
+	height: 45px;
+	display: flex;
+	margin: 0px 12px 0px 0px;
+	background-color: #F2F2F2;
+	// .quantity__button
+	&__button {
+		flex: 0 0 45px;
+		position: relative;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: all 0.3s ease 0s;
+			margin: 0px 0px 0px -4.5px;
+			background-color: #333333;
+			width: 6px;
+			height: 1px;
+		}
+		// .quantity__button_plus
+		&_plus {
+			&::before {
+				transform: rotate(-90deg);
+			}
+		}
+		// .quantity__button_minus
+		&_minus {
+		}
+	}
+	// .quantity__input
+	&__input {
+		flex: 1 1 auto;
+		input {
+			height: 100%;
+			color: #333333;
+			font-size: 14px;
+			width: 100%;
+			text-align: center;
+			background-color: #F2F2F2;
+		}
+	}
+}
+//</QUANTITY>====================================================================================================

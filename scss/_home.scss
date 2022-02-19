@@ -1,0 +1,428 @@
+.page {
+
+	// .page__restaurant
+
+	&__restaurant {
+		margin: 0px 0px 80px 0px;
+	}
+	// .page__appointment
+
+	&__appointment {
+		margin: 0px 0px 180px 0px;
+	}
+	
+	// .page__service
+
+	&__service {
+		margin: 0px 0px 115px 0px;
+	}
+
+	
+	// .page__info
+
+	&__info {
+		margin: 0px 0px 80px 0px;
+	}
+
+	// .page__sfeerfotos
+
+	&__sfeerfotos {
+		margin: 0px 0px -200px 0px;
+	}
+}
+.restaurant {
+	background: url('../img/bg.jpg') 0 0/cover no-repeat;
+	padding: 265px 0px;
+
+	// .restaurant__container
+
+	&__container {
+	}
+
+	// .restaurant__body
+
+	&__body {
+	}
+
+	// .restaurant__label
+
+	&__label {
+		font-weight: 500;
+		font-size: 24px;
+		@include adaptiv-font(24, 16, 24);
+		letter-spacing: 0.06em;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #FFFFFF;
+		margin: 0px 0px 30px 0px;
+	}
+
+	// .restaurant__title
+
+	&__title {
+		font-weight: bold;
+		font-size: 64px;
+		line-height: calc((88/64)*100%);
+		color: #FFFFFF;
+		@include adaptiv-font(64, 22, 64);
+	}
+
+	// .restaurant__row
+
+	&__row {
+		margin: 40px 0px 0px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .restaurant__btn
+
+	&__btn {
+	}
+
+	// .restaurant__links
+
+	&__links {
+		flex: 0 1 265px;
+	}
+}
+
+.appointment-page {
+
+	// .appointment-page__container
+
+	&__container {
+	}
+
+	// .appointment-page__body
+
+	&__body {
+		display: flex;
+	}
+
+	// .appointment-page__title
+
+	&__title {
+	}
+
+	// .appointment-page__left
+
+	&__left {
+		flex: 0 1 470px;
+		margin: 0px 30px 0px 0px;
+	}
+
+	// .appointment-page__list
+
+	&__list {
+	}
+
+	// .appointment-page__item
+
+	&__item {
+		padding: 0px 0px 25px 0px;
+		border-bottom: 1px solid #E7E7E7;;
+		&:not(:last-child){
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
+	// .appointment-page__label
+
+	&__label {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: calc((32/24)*100%);
+		margin: 0px 0px 18px 0px;
+	}
+
+	// .appointment-page__row
+
+	&__row {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	// .appointment-page__text
+
+	&__text {
+		flex: 0 0 auto;
+		font-size: 18px;
+	}
+
+	// .appointment-page__circules
+
+	&__circules {
+		flex: 0 0 5px;
+		height: 5px;
+		background-color: #D3B47F;
+		margin: 0 28px;
+		position: relative;
+		border-radius: 50%;
+		&::before,&::after{
+			content:'';
+			width: 5px;
+			height: 5px;
+			background-color: #D3B47F;
+			position: absolute;
+			border-radius: 50%;
+		}
+		&::before{
+			left: 16px;
+		}
+		&::after{
+			right: 15px;
+		}
+
+	}
+
+	// .appointment-page__right
+
+	&__right {
+		position: relative;
+		flex: 1 1 auto;
+	}
+
+	// .appointment-page__box
+
+	&__box {
+		border: 2px solid #D3B47F;
+		width: calc((470/670)*100%);
+		padding: 0px 0px 74.2% 0px;
+		position: absolute;
+		bottom: 0;
+		left: 100px;
+	}
+
+	// .appointment-page__img
+
+	&__img {
+		width: calc((323/670)*100%);
+		padding: 0px 0px 72.5% 0px;
+		position: absolute;
+		z-index: 1;
+		&_l {
+			left: 0;
+			bottom: -90px;
+		}
+
+		// .appointment-page__img_r
+
+		&_r {
+			top: 0;
+			right: 0;
+		}
+		
+	}
+}
+.service-page {
+	
+	// .service-page__bg
+
+	&__bg {
+		background-color: #3A4574;
+	}
+	// .service-page__container
+
+	&__container {
+		position: relative;
+	}
+
+	// .service-page__slider
+
+	&__slider {
+	}
+}
+.slider {
+
+	// .slider__slide
+
+	&__slide {
+		text-align: center;
+		padding: 220px 190px;
+	}
+
+	// .slider__title
+
+	&__title {
+		color:  #D3B47F;
+		font-weight: 600;
+		@include adaptiv-font(36, 18, 36);
+		line-height: 111%;
+		margin: 0px 0px 20px 0px;
+		span{
+			font-size: 54px;
+			margin: 0px 0px 35px 0px;
+			display: block;
+			@include adaptiv-font(54, 22, 54);
+		}
+	}
+
+	// .slider__text
+
+	&__text {
+		font-size: 16px;
+		line-height: 250%;
+		color: #FFFFFF;
+		margin: 0px 0px 40px 0px;
+	}
+
+	// .slider__name
+
+	&__name {
+		font-weight: 600;
+		font-size: 24px;
+		letter-spacing: 0.245em;
+		color: #D3B47F;
+		@include adaptiv-font(24, 16, 24);
+	}
+}
+
+.info-page {
+
+	// .info-page__container
+
+	&__container {
+	}
+
+	// .info-page__body
+
+	&__body {
+	}
+
+	// .info-page__row
+
+	&__row {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+		&:not(:last-child){
+			margin: 0px 0px 30px 0px;
+		}
+	}
+
+	// .info-page__item-text
+
+	&__item-text {
+		flex: 0 1 470px;
+	}
+
+	// .info-page__item-img
+
+	&__item-img {
+		flex: 0 1 670px;
+	}
+
+	// .info-page__title
+
+	&__title {
+		font-weight: bold;
+		@include adaptiv-font(40, 20, 40);
+		padding: 20px 0px 0px 0px;
+		margin: 0px 0px 45px 0px;
+		position: relative;
+		text-transform: uppercase;
+		&::before{
+			content:'';
+			position: absolute;
+			width: 108px;
+			height: 2px;
+			background-color: #D3B47F;
+			bottom: -35px;
+			left: 0;
+			transform: translateX(-50%);
+		}
+	}
+
+	// .info-page__text
+
+	&__text {
+		font-size: 16px;
+		line-height: 200%;
+		color: #808080;
+	}
+
+	// .info-page__img
+
+	&__img {
+		padding: 0px 0px 83.6% 0px;
+	}
+}
+
+.sfeerfotos-page {
+
+	// .sfeerfotos-page__bg
+
+	&__bg {
+		background-color: #3A4574;
+		padding: 90px 0px 395px 0px;
+	}
+
+	// .sfeerfotos-page__container
+
+	&__container {
+	}
+
+	// .sfeerfotos-page__body
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .sfeerfotos-page__content
+
+	&__content {
+		flex: 0 1 570px;
+		margin: 0px 20px 0px 0px;
+	}
+
+	// .sfeerfotos-page__title
+
+	&__title {
+		font-weight: bold;
+		@include adaptiv-font(48, 20, 48);
+		color: #FFFFFF;
+		margin: 0px 0px 15px 0px;
+	}
+
+	// .sfeerfotos-page__text
+
+	&__text {
+		font-size: 16px;
+		line-height: 200%;
+		color: #FFFFFF;
+	}
+
+	// .sfeerfotos-page__arrows
+
+	&__arrows {
+		position: relative;
+		flex: 0 0 170px;
+		display: inline-flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		margin: 0px 0px 15px 0px;
+	}
+
+	// .sfeerfotos-page__slider
+
+	&__slider {
+	}
+}
+
+.slider-sfeerfotos {
+	transform: translateY(-55%);
+	// .slider-sfeerfotos__slide
+
+	&__slide {
+	}
+
+	// .slider-sfeerfotos__img
+
+	&__img {
+		padding: 0px 0px 66.5% 0px;
+	}
+}
+

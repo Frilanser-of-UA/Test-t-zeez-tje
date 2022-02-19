@@ -1,0 +1,29 @@
+.footer {
+	padding: 15px 0px;
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__body
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .footer__logo
+
+	&__logo {
+		img{
+			width: 100%;
+		}
+	}
+
+	// .footer__links
+
+	&__links {
+		flex: 0 1 270px;
+	}
+}

@@ -1,0 +1,55 @@
+//<CHECK (chk+tab)>====================================================================================================
+.checkbox {
+	position: relative;
+	// .checkbox__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+		&:checked + .checkbox__text:before {
+			background: #fff url("../img/icons/angle-down.svg") center no-repeat;
+			
+		}
+	}
+	// .checkbox__text
+	&__text {
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		font-size: 16px;
+		cursor: pointer;
+		&:before {
+			content: "";
+			align-self: flex-start;
+			margin: 0px 14px 0px 0px;
+			flex: 0 0 20px;
+			left: 0;
+			top: 0;
+			width: 20px;
+			height: 18px;
+			background: #fff;
+			border: 1px solid #a7a9ac;
+		}
+	}
+	a {
+		color: #ee1212;
+		text-decoration: underline;
+		margin: 0px 0px 0px 3px;
+		@media (min-width: 992px) {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	
+	&._error {
+		.checkbox__text {
+			&:before {
+				box-shadow: 0 0 5px red;
+			}
+		}
+	}
+}
+//</CHECK>====================================================================================================

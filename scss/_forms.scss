@@ -1,0 +1,55 @@
+.form {
+
+	// .form__title
+
+	&__title {
+		font-weight: bold;
+		font-size: 28px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	// .form__item
+
+	&__item {
+		margin: 0px 0px 20px 0px;
+	}
+
+	// .form__label
+
+	&__label {
+		margin: 0px 0px 15px 0px;
+		font-size: 16px;
+		display: block
+	}
+
+	// .form__input
+
+	&__input {
+		
+	}
+
+	// .form__select
+
+	&__select {
+	}
+
+	// .form__link
+
+	&__link {
+	}
+
+	// .form__btn
+
+	&__btn {
+	}
+}
+
+.checkbox {
+
+	// .checkbox__input
+
+	&__input {
+	}
+}
+@import "_btn"; 
+@import "_input"; 
